@@ -131,8 +131,8 @@ console.log('8. Looping through supplyChanges to calculate the sum:');
 
 let totalParts=0;
 
-for(let i; i < supplyChanges.length; i++){
-  totalParts += (supplyChanges[i]);
+for(let i = 0; i < supplyChanges.length; i++){
+  totalParts += supplyChanges[i];
 }
 
 
@@ -149,7 +149,8 @@ for(let i; i < supplyChanges.length; i++){
 //    how many boxes were filled.
 console.log('9. Filling boxes with a "while" loop');
 
-
+let parts = 572;
+let boxesFilled = 0;
 
 
 // DO NOT MODIFY
