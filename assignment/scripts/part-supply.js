@@ -50,28 +50,29 @@ let positives=[];
 let negatives=[];
 let zeroes=[];
 
-for (let num = 0; num < supplyChanges.length; num++) {
-  if (supplyChanges[num] > 0) positives.push(supplyChanges[num]);
-  else if (supplyChanges[num] < 0) negatives.push(supplyChanges[num]);
-  else if (supplyChanges[num] === 0) zeroes.push(supplyChanges[num]);
+for (let i = 0; i < supplyChanges.length; i++) {
+  if (supplyChanges[i] > 0) positives.push(supplyChanges[i]);
+  else if (supplyChanges[i] < 0) negatives.push(supplyChanges[i]);
+  else if (supplyChanges[i] == 0) zeroes.push(supplyChanges[i]);
 }
 
-/*for (let num = 0; num <supplyChanges.length; num++){
-  if (num > 0)positives.push(supplyChanges[num]);
-  else if (num < 0)negatives.push(supplyChanges[num]);
-  else if(num === 0)zeroes.push(supplyChanges[num]);
+//kept wrong code to make sure I wasn't repeating myself
+
+/*for (let i = 0; i <supplyChanges.length; i++){
+  if (i > 0)positives.push(supplyChanges[i]);
+  else if (i < 0)negatives.push(supplyChanges[i]);
+  else if(i === 0)zeroes.push(supplyChanges[i]);
 }*/
 
+/*for (let i = 0; i < supplyChanges.length; i++)
+  if (i > 0)(positives.push[supplyChanges])
+  else if (i < 0)(negatives.push[supplyChanges])
+  else if (i === 0)(zeroes.push[supplyChanges])*/
 
-/*for (let num = 0; num < supplyChanges.length; num++)
-  if (num > 0)(positives.push[supplyChanges])
-  else if (num < 0)(negatives.push[supplyChanges])
-  else if (num === 0)(zeroes.push[supplyChanges])*/
-
-/*for (let num = 0; num < supplyChanges.length; num++){
-  if (num > 0 )(positives.push)
-  else if (num < 0)(negatives.push)
-  else if (num === 0)(zeroes.push)
+/*for (let i = 0; i < supplyChanges.length; i++){
+  if (i > 0 )(positives.push)
+  else if (i < 0)(negatives.push)
+  else if (i === 0)(zeroes.push)
 }*/
 
 
@@ -83,11 +84,56 @@ for (let num = 0; num < supplyChanges.length; num++) {
 //    'stretchNegatives', and 'stretchZeroes'. 
 console.log('7. Looping through supplyChanges to populate more arrays with positive, negative, and zero values:');
 
+let stretchPositives=[];
+let stretchNegatives=[];
+let stretchZeroes=[];
+
+for (let i of supplyChanges){
+  if (i > 0)stretchPositives.push(i);
+  else if(i < 0)stretchNegatives.push(i)
+  else if(i == 0)stretchZeroes.push(i);
+}
+/*for ( let i of supplyChanges){
+  if (supplyChanges[i] > 0)stretchPositives.push[i];
+  else if (supplyChanges[i] < 0)stretchNegatives.push[i];
+  else if (supplyChanges[i]== 0)stretchZeroes.push[i];
+}*/
+
+/*for (let i of supplyChanges){
+  if ([i] > 0)stretchPositives.push(supplyChanges[i]);
+  else if ([i]< 0)stretchNegatives.push(supplyChanges[i]);
+  else if ([i] == 0)stretchZeroes.push(supplyChanges[i]);
+}*/
+
+/*for (let i of supplyChanges){
+  if ([i] > 0)stretchPositives.push[i];
+  else if ([i]< 0)stretchNegatives.push[i];
+  else if ([i] == 0)stretchZeroes.push[i];
+}*/
+
+/*for (i of supplyChanges){
+if (i > 0)stretchPositives.push(supplyChanges[i]);
+else if ( i < 0)stretchNegatives.push(supplyChanges[i]);
+else if (i== 0)stretchZeroes.push(supplyChanges[i]);
+*/
+
+/*for (let i of supplyChanges){
+  if (supplyChanges[i] > 0) stretchPositives.push(supplyChanges[i]);
+  else if (supplyChanges[i] < 0) stretchNegatives.push(supplyChanges[i]);
+  else if (supplyChanges[i] == 0) stretchZeroes.push(supplyChanges[i]);
+}*/
+
 
 // 8. Create a variable called 'totalParts' and assign it a value of 0.
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
 console.log('8. Looping through supplyChanges to calculate the sum:');
+
+let totalParts=0;
+
+for(let i; i < supplyChanges.length; i++){
+  totalParts += (supplyChanges[i]);
+}
 
 
 // 9. We have a large stash of parts in our warehouse that we 
