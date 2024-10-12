@@ -90,9 +90,11 @@ let stretchZeroes=[];
 
 for (let i of supplyChanges){
   if (i > 0)stretchPositives.push(i);
-  else if(i < 0)stretchNegatives.push(i)
+  else if(i < 0)stretchNegatives.push(i);
   else if(i == 0)stretchZeroes.push(i);
 }
+//Why (i) not [i]? It didn't make sense logically to use () until I tried a bunch of other things first.
+
 /*for ( let i of supplyChanges){
   if (supplyChanges[i] > 0)stretchPositives.push[i];
   else if (supplyChanges[i] < 0)stretchNegatives.push[i];
@@ -151,6 +153,12 @@ console.log('9. Filling boxes with a "while" loop');
 
 let parts = 572;
 let boxesFilled = 0;
+
+while (parts > 0){parts; parts--;}
+
+
+
+console.log(parts);
 
 
 // DO NOT MODIFY
