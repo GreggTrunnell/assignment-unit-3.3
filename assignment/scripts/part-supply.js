@@ -154,12 +154,22 @@ console.log('9. Filling boxes with a "while" loop');
 let parts = 572;
 let boxesFilled = 0;
 
-while (parts > 0){parts; parts--;}
+while (parts > 6){parts-=7;
+  boxesFilled=(parts);
+}
 
+//while (parts > 6){boxesFilled=(parts-7);parts-=7;}
 
+//while (parts > 0){boxesFilled=(parts ) ;parts-=7}
+//AssertionError: expected -2 to equal 5
 
-console.log(parts);
+//while (parts > 6){boxesFilled=(parts=7);parts-=7}
+//AssertionError: expected +0 to equal 5
 
+//while (parts > 6){boxesFilled=(parts);parts-=7}
+//AssertionError: expected 12 to equal 81
+
+console.log(boxesFilled)
 
 // DO NOT MODIFY
 // Used for automated testing
